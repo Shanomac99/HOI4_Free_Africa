@@ -64,11 +64,11 @@ set_popularities = {
 	neutrality = 50
 
 	}
-set_politics = {
-ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
 }
 
 create_country_leader = {
@@ -76,9 +76,6 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
 	ideology = liberalism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -86,9 +83,6 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -96,9 +90,6 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
 	ideology = despotism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -106,7 +97,4 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
 	ideology = leninism
-	traits = {
-		#
-	}
 }

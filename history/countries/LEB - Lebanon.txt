@@ -75,9 +75,6 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
 	ideology = liberalism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -85,9 +82,6 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Europe_Generic_fascism1.dds"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -95,9 +89,6 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
 	ideology = despotism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -105,7 +96,4 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
 	ideology = leninism
-	traits = {
-		#
-	}
 }

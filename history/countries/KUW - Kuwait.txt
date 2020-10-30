@@ -51,7 +51,7 @@ set_popularities = {
 
 	}
 set_politics = {
-ruling_party = democratic
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -69,8 +69,6 @@ ruling_party = democratic
 #}
 
 
-}
-
 
 1939.1.1 = {
 	set_popularities = {
@@ -80,10 +78,10 @@ ruling_party = democratic
 	neutrality = 23
 
 	}
-set_politics = {
-ruling_party = democratic
+	set_politics = {
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
+	}
 }
-

@@ -52,7 +52,7 @@ set_popularities = {
 
 	}
 set_politics = {
-ruling_party = neutrality
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -65,13 +65,8 @@ create_country_leader = {
 	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = centrism
-	traits = {
-		#
-	}
 }
 
-
-}
 
 
 #Now a colony of Italy  However, if independent it would have
@@ -82,11 +77,8 @@ create_country_leader = {
 	communism = 0
 	neutrality = 100
 		}
-	}
-		
-		}
-set_politics = {
-ruling_party = neutrality
+	set_politics = {
+		ruling_party = neutrality
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no

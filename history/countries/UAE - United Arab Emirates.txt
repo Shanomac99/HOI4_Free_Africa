@@ -51,7 +51,7 @@ set_popularities = {
 
 	}
 set_politics = {
-ruling_party = neutrality
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -69,8 +69,6 @@ ruling_party = neutrality
 #}
 
 
-}
-
 
 1939.1.1 = {
 	set_popularities = {
@@ -80,10 +78,11 @@ ruling_party = neutrality
 	neutrality = 75
 
 	}
-set_politics = {
-ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
 }
 
