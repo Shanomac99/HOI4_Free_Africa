@@ -1,0 +1,163 @@
+focus_tree = {
+	id = free_africa
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MOR
+		}
+	}
+	#Focus for Fascism
+	focus = {
+		id = MOR_fascism
+		icon = GFX_goal_support_fascism
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MOR_openuppoliticaldiscourse }
+		mutually_exclusive = { focus = MOR_communism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_timed_idea= { 
+idea = nationalism
+days = 720
+}
+add_popularity= { 
+ideology = fascism 
+popularity = 0.1 
+}
+		}
+	}
+
+	#Focus for Communism
+	focus = {
+		id = MOR_communism
+		icon = GFX_goal_support_communism
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MOR_openuppoliticaldiscourse }
+		mutually_exclusive = { 
+			focus = MOR_fascism 
+		}
+		mutually_exclusive = { 
+			focus = MOR_neutrality 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = internationalism
+				days = 720
+			}
+		
+			add_popularity= { 
+				ideology = fascism 
+				popularity = 0.1 
+			}
+		}
+	}
+
+	#Focus for Neutrality
+	focus = {
+		id = MOR_neutrality
+		icon = GFX_goal_generic_neutrality_focus
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MOR_openuppoliticaldiscourse }
+		mutually_exclusive = { 
+			focus = MOR_communism 
+		}
+		mutually_exclusive = { 
+			focus = MOR_democracy 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = neutrality_idea
+				days = 720
+			}
+		
+			add_popularity= { 
+				ideology = neutrality 
+				popularity = 0.1 
+			}
+		}
+	}
+
+	#Focus for Democracy
+	focus = {
+		id = MOR_democracy
+		icon = GFX_goal_support_democracy
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MOR_openuppoliticaldiscourse }
+		mutually_exclusive = { focus = MOR_neutrality }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = liberty_ethos_focus
+				days = 720
+			}
+		
+			add_popularity= { 
+				ideology = democratic 
+				popularity = 0.1 
+			}
+		}
+	}
+
+	#Focus for War Fanatic
+	focus = {
+		id = MOR_warfanatic
+		icon = GFX_goal_generic_army_tanks
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MOR_openuppoliticaldiscourse }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= war_fanatic
+		}
+	}
+
+	#Focus for Open Up Political Discourse
+	focus = {
+		id = MOR_openuppoliticaldiscourse
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+#End of focuses 
+ }
